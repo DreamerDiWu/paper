@@ -1,0 +1,24 @@
+1. Download THUCNews data set
+2. Download stop word list
+3. Jieba tokenize
+4. train validation test split
+5. trainning single fasttext, random-fasttext,
+tfidf+gbdt, tfidf+svm, tfidf+lr
+6. use lime to explain (one is remove stopwords, other not)
+
+
+Point:
+chinese text classification research
+
+fasttext theory:
+1.introductions
+
+
+why random-fasttext works:
+1.bagging theory ensures;
+2.chinese only need unigram
+3.single fasttext is strong enough
+
+how to use LIME?
+
+

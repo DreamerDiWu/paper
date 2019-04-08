@@ -1,0 +1,87 @@
+ws=5, lr=0.5, epoch=20,
+
+Trainning Time: 360.77s
+generating prediction file...
+prediction file generated...
+merge file results...
+Done!
+Prediction Time: 97.16s
+RandomFastText Report:
+教育: 	precision = 0.944	recall = 0.937	fscore = 0.940
+游戏: 	precision = 0.979	recall = 0.972	fscore = 0.975
+股票: 	precision = 0.952	recall = 0.940	fscore = 0.946
+家居: 	precision = 0.964	recall = 0.925	fscore = 0.944
+娱乐: 	precision = 0.960	recall = 0.972	fscore = 0.966
+时尚: 	precision = 0.949	recall = 0.949	fscore = 0.949
+星座: 	precision = 0.946	recall = 0.976	fscore = 0.961
+体育: 	precision = 0.997	recall = 0.994	fscore = 0.995
+房产: 	precision = 0.964	recall = 0.947	fscore = 0.956
+时政: 	precision = 0.927	recall = 0.943	fscore = 0.935
+科技: 	precision = 0.939	recall = 0.958	fscore = 0.949
+财经: 	precision = 0.919	recall = 0.925	fscore = 0.922
+彩票: 	precision = 0.989	recall = 0.981	fscore = 0.985
+社会: 	precision = 0.895	recall = 0.914	fscore = 0.905
+Average Precision: 0.952	Average Recall: 0.952	Average Fscore: 0.952
+
+
+
+
+SingleFastText Report:
+教育: 	precision = 0.942	recall = 0.935	fscore = 0.938
+游戏: 	precision = 0.984	recall = 0.972	fscore = 0.978
+股票: 	precision = 0.948	recall = 0.940	fscore = 0.944
+家居: 	precision = 0.963	recall = 0.917	fscore = 0.940
+娱乐: 	precision = 0.958	recall = 0.971	fscore = 0.964
+时尚: 	precision = 0.948	recall = 0.949	fscore = 0.949
+星座: 	precision = 0.946	recall = 0.974	fscore = 0.960
+体育: 	precision = 0.996	recall = 0.997	fscore = 0.997
+房产: 	precision = 0.961	recall = 0.949	fscore = 0.955
+时政: 	precision = 0.928	recall = 0.941	fscore = 0.934
+科技: 	precision = 0.936	recall = 0.958	fscore = 0.947
+财经: 	precision = 0.916	recall = 0.928	fscore = 0.922
+彩票: 	precision = 0.990	recall = 0.981	fscore = 0.985
+社会: 	precision = 0.898	recall = 0.910	fscore = 0.904
+Average Precision: 0.951	Average Recall: 0.952	Average Fscore: 0.951
+
+
+
+rft = RandomFastText(dim_ratio=0.2, n_classifier=30,dim=100,
+                         ws=5,lr=0.5,epoch=5)
+Trainning Time: 177.90s
+Prediction Time: 106.76s
+RandomFastText Report:
+教育: 	precision = 0.947	recall = 0.931	fscore = 0.939
+时尚: 	precision = 0.957	recall = 0.960	fscore = 0.959
+时政: 	precision = 0.937	recall = 0.945	fscore = 0.941
+彩票: 	precision = 0.986	recall = 0.981	fscore = 0.983
+体育: 	precision = 0.996	recall = 0.997	fscore = 0.997
+星座: 	precision = 0.950	recall = 0.979	fscore = 0.964
+社会: 	precision = 0.891	recall = 0.912	fscore = 0.901
+科技: 	precision = 0.949	recall = 0.959	fscore = 0.954
+娱乐: 	precision = 0.958	recall = 0.976	fscore = 0.967
+游戏: 	precision = 0.981	recall = 0.974	fscore = 0.977
+家居: 	precision = 0.970	recall = 0.931	fscore = 0.950
+房产: 	precision = 0.962	recall = 0.938	fscore = 0.950
+股票: 	precision = 0.954	recall = 0.946	fscore = 0.950
+财经: 	precision = 0.922	recall = 0.937	fscore = 0.930
+Average Precision: 0.954	Average Recall: 0.955	Average Fscore: 0.954
+
+
+
+
+SingleFastText Report:
+教育: 	precision = 0.940	recall = 0.931	fscore = 0.936
+时尚: 	precision = 0.952	recall = 0.947	fscore = 0.949
+时政: 	precision = 0.916	recall = 0.942	fscore = 0.929
+彩票: 	precision = 0.990	recall = 0.980	fscore = 0.985
+体育: 	precision = 0.997	recall = 0.995	fscore = 0.996
+星座: 	precision = 0.940	recall = 0.976	fscore = 0.958
+社会: 	precision = 0.892	recall = 0.903	fscore = 0.898
+科技: 	precision = 0.943	recall = 0.955	fscore = 0.949
+娱乐: 	precision = 0.957	recall = 0.975	fscore = 0.966
+游戏: 	precision = 0.987	recall = 0.971	fscore = 0.979
+家居: 	precision = 0.959	recall = 0.926	fscore = 0.942
+房产: 	precision = 0.960	recall = 0.944	fscore = 0.952
+股票: 	precision = 0.955	recall = 0.938	fscore = 0.947
+财经: 	precision = 0.916	recall = 0.932	fscore = 0.924
+Average Precision: 0.950	Average Recall: 0.951	Average Fscore: 0.951

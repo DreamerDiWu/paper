@@ -1,0 +1,202 @@
+Trainning Time: 1052.03s
+generating prediction file...
+prediction file generated...
+merge file results...
+Done!
+Prediction Time: 402.36s
+RandomFastText Report:
+fashion: 	precision = 0.990	recall = 0.773	fscore = 0.868
+economic: 	precision = 0.895	recall = 0.905	fscore = 0.900
+ent: 	precision = 0.830	recall = 0.970	fscore = 0.895
+science: 	precision = 0.858	recall = 0.895	fscore = 0.876
+game: 	precision = 0.967	recall = 0.928	fscore = 0.947
+stock: 	precision = 0.847	recall = 0.867	fscore = 0.857
+house: 	precision = 0.928	recall = 0.931	fscore = 0.930
+lottery: 	precision = 0.990	recall = 0.975	fscore = 0.982
+constellation: 	precision = 0.931	recall = 0.982	fscore = 0.956
+home: 	precision = 0.862	recall = 0.915	fscore = 0.887
+affairs: 	precision = 0.952	recall = 0.853	fscore = 0.900
+edu: 	precision = 0.940	recall = 0.944	fscore = 0.942
+sports: 	precision = 0.955	recall = 0.962	fscore = 0.959
+Average Precision: 0.919	Average Recall: 0.915	Average Fscore: 0.915
+
+
+
+
+SingleFastText Report:
+fashion: 	precision = 0.949	recall = 0.825	fscore = 0.883
+economic: 	precision = 0.900	recall = 0.807	fscore = 0.851
+ent: 	precision = 0.740	recall = 0.922	fscore = 0.821
+science: 	precision = 0.734	recall = 0.812	fscore = 0.771
+game: 	precision = 0.945	recall = 0.847	fscore = 0.893
+stock: 	precision = 0.752	recall = 0.838	fscore = 0.793
+house: 	precision = 0.924	recall = 0.856	fscore = 0.889
+lottery: 	precision = 0.983	recall = 0.913	fscore = 0.947
+constellation: 	precision = 0.923	recall = 0.928	fscore = 0.926
+home: 	precision = 0.821	recall = 0.835	fscore = 0.828
+affairs: 	precision = 0.870	recall = 0.853	fscore = 0.862
+edu: 	precision = 0.940	recall = 0.906	fscore = 0.923
+sports: 	precision = 0.869	recall = 0.913	fscore = 0.890
+Average Precision: 0.873	Average Recall: 0.866	Average Fscore: 0.867
+
+
+GradientBoostingClassifier(criterion='friedman_mse', init=None,
+              learning_rate=0.1, loss='deviance', max_depth=2,
+              max_features=None, max_leaf_nodes=None,
+              min_impurity_decrease=0.0, min_impurity_split=None,
+              min_samples_leaf=1, min_samples_split=2,
+              min_weight_fraction_leaf=0.0, n_estimators=100,
+              presort='auto', random_state=None, subsample=1.0, verbose=0,
+              warm_start=False)
+30min 17s
+
+edu: 	precision = 0.96	recall = 0.94	fscore = 0.95
+ent: 	precision = 0.92	recall = 0.91	fscore = 0.92
+game: 	precision = 0.94	recall = 0.90	fscore = 0.92
+house: 	precision = 0.98	recall = 0.98	fscore = 0.98
+lottery: 	precision = 0.98	recall = 0.96	fscore = 0.97
+sports: 	precision = 0.94	recall = 0.95	fscore = 0.95
+affairs: 	precision = 0.87	recall = 0.92	fscore = 0.89
+science: 	precision = 0.89	recall = 0.85	fscore = 0.87
+economic: 	precision = 0.90	recall = 0.87	fscore = 0.89
+home: 	precision = 0.80	recall = 0.91	fscore = 0.85
+stock: 	precision = 0.87	recall = 0.86	fscore = 0.87
+constellation: 	precision = 0.98	recall = 0.97	fscore = 0.98
+fashion: 	precision = 0.94	recall = 0.93	fscore = 0.93
+Average Precision: 0.92	Average Recall: 0.92	Average Fscore: 0.92
+
+
+SVM
+ent: 	precision = 0.897	recall = 0.960	fscore = 0.928
+affairs: 	precision = 0.904	recall = 0.924	fscore = 0.914
+science: 	precision = 0.908	recall = 0.871	fscore = 0.889
+home: 	precision = 0.953	recall = 0.902	fscore = 0.927
+sports: 	precision = 0.955	recall = 0.976	fscore = 0.965
+edu: 	precision = 0.965	recall = 0.956	fscore = 0.960
+house: 	precision = 0.936	recall = 0.949	fscore = 0.942
+stock: 	precision = 0.876	recall = 0.887	fscore = 0.881
+fashion: 	precision = 0.947	recall = 0.949	fscore = 0.948
+game: 	precision = 0.963	recall = 0.941	fscore = 0.952
+economic: 	precision = 0.925	recall = 0.914	fscore = 0.920
+lottery: 	precision = 0.993	recall = 0.971	fscore = 0.982
+constellation: 	precision = 0.972	recall = 0.989	fscore = 0.980
+Average Precision: 0.938	Average Recall: 0.938	Average Fscore: 0.938
+
+
+LR
+ent: 	precision = 0.849	recall = 0.965	fscore = 0.904
+affairs: 	precision = 0.852	recall = 0.925	fscore = 0.887
+science: 	precision = 0.905	recall = 0.850	fscore = 0.877
+home: 	precision = 0.917	recall = 0.900	fscore = 0.909
+sports: 	precision = 0.945	recall = 0.965	fscore = 0.955
+edu: 	precision = 0.970	recall = 0.936	fscore = 0.953
+house: 	precision = 0.946	recall = 0.913	fscore = 0.929
+stock: 	precision = 0.838	recall = 0.863	fscore = 0.850
+fashion: 	precision = 0.929	recall = 0.936	fscore = 0.933
+game: 	precision = 0.973	recall = 0.911	fscore = 0.941
+economic: 	precision = 0.924	recall = 0.895	fscore = 0.909
+lottery: 	precision = 0.992	recall = 0.956	fscore = 0.974
+constellation: 	precision = 0.969	recall = 0.970	fscore = 0.970
+Average Precision: 0.924	Average Recall: 0.922	Average Fscore: 0.922
+
+
+
+dim_ratio=0.3, n_clfs = 20
+Trainning Time: 297.02s
+generating prediction file...
+prediction file generated...
+merge file results...
+Done!
+Prediction Time: 84.70s
+RandomFastText Report:
+lottery: 	precision = 0.975	recall = 0.980	fscore = 0.978
+fashion: 	precision = 0.931	recall = 0.955	fscore = 0.943
+ent: 	precision = 0.917	recall = 0.949	fscore = 0.933
+sports: 	precision = 0.950	recall = 0.959	fscore = 0.955
+affairs: 	precision = 0.913	recall = 0.907	fscore = 0.910
+home: 	precision = 0.902	recall = 0.913	fscore = 0.908
+game: 	precision = 0.919	recall = 0.944	fscore = 0.931
+economic: 	precision = 0.891	recall = 0.915	fscore = 0.903
+house: 	precision = 0.932	recall = 0.952	fscore = 0.942
+science: 	precision = 0.961	recall = 0.736	fscore = 0.834
+edu: 	precision = 0.923	recall = 0.952	fscore = 0.937
+stock: 	precision = 0.845	recall = 0.876	fscore = 0.860
+constellation: 	precision = 0.967	recall = 0.977	fscore = 0.972
+Average Precision: 0.925	Average Recall: 0.924	Average Fscore: 0.923
+
+
+
+clf(ws=5, lr=0.5,epoch=20,) n_clf = 10
+--------------------------------------------------------------
+Test Set
+--------------------------------------------------------------
+Prediction Time: 72.24s
+RandomFastText Report:
+game: 	precision = 0.951	recall = 0.921	fscore = 0.936
+house: 	precision = 0.944	recall = 0.939	fscore = 0.941
+ent: 	precision = 0.902	recall = 0.944	fscore = 0.922
+economic: 	precision = 0.916	recall = 0.891	fscore = 0.903
+edu: 	precision = 0.954	recall = 0.939	fscore = 0.947
+lottery: 	precision = 0.989	recall = 0.969	fscore = 0.979
+affairs: 	precision = 0.899	recall = 0.914	fscore = 0.906
+science: 	precision = 0.883	recall = 0.845	fscore = 0.864
+stock: 	precision = 0.848	recall = 0.896	fscore = 0.871
+sports: 	precision = 0.954	recall = 0.971	fscore = 0.962
+home: 	precision = 0.924	recall = 0.911	fscore = 0.917
+fashion: 	precision = 0.952	recall = 0.932	fscore = 0.942
+Average Precision: 0.926	Average Recall: 0.923	Average Fscore: 0.924
+
+
+
+
+SingleFastText Report:
+game: 	precision = 0.952	recall = 0.916	fscore = 0.934
+house: 	precision = 0.941	recall = 0.938	fscore = 0.939
+ent: 	precision = 0.925	recall = 0.931	fscore = 0.928
+economic: 	precision = 0.903	recall = 0.883	fscore = 0.893
+edu: 	precision = 0.947	recall = 0.946	fscore = 0.946
+lottery: 	precision = 0.984	recall = 0.965	fscore = 0.974
+affairs: 	precision = 0.918	recall = 0.891	fscore = 0.904
+science: 	precision = 0.871	recall = 0.860	fscore = 0.866
+stock: 	precision = 0.840	recall = 0.895	fscore = 0.867
+sports: 	precision = 0.958	recall = 0.968	fscore = 0.963
+home: 	precision = 0.912	recall = 0.922	fscore = 0.917
+fashion: 	precision = 0.941	recall = 0.937	fscore = 0.939
+Average Precision: 0.924	Average Recall: 0.921	Average Fscore: 0.923
+
+
+---------------------------------------------------------------
+Validation set:
+---------------------------------------------------------------
+RandomFastText Report:
+science: 	precision = 0.890	recall = 0.889	fscore = 0.889
+home: 	precision = 0.928	recall = 0.909	fscore = 0.919
+affairs: 	precision = 0.914	recall = 0.901	fscore = 0.907
+fashion: 	precision = 0.957	recall = 0.945	fscore = 0.951
+lottery: 	precision = 0.986	recall = 0.980	fscore = 0.983
+edu: 	precision = 0.940	recall = 0.947	fscore = 0.944
+game: 	precision = 0.953	recall = 0.932	fscore = 0.942
+sports: 	precision = 0.962	recall = 0.958	fscore = 0.960
+economic: 	precision = 0.911	recall = 0.908	fscore = 0.909
+house: 	precision = 0.947	recall = 0.945	fscore = 0.946
+constellation: 	precision = 0.966	recall = 0.980	fscore = 0.973
+ent: 	precision = 0.916	recall = 0.957	fscore = 0.936
+stock: 	precision = 0.865	recall = 0.881	fscore = 0.873
+Average Precision: 0.933	Average Recall: 0.933	Average Fscore: 0.933
+
+
+SingleFastText Report:
+science: 	precision = 0.886	recall = 0.882	fscore = 0.884
+home: 	precision = 0.924	recall = 0.918	fscore = 0.921
+affairs: 	precision = 0.929	recall = 0.884	fscore = 0.906
+fashion: 	precision = 0.947	recall = 0.950	fscore = 0.949
+lottery: 	precision = 0.981	recall = 0.983	fscore = 0.982
+edu: 	precision = 0.933	recall = 0.954	fscore = 0.943
+game: 	precision = 0.948	recall = 0.928	fscore = 0.938
+sports: 	precision = 0.961	recall = 0.966	fscore = 0.964
+economic: 	precision = 0.897	recall = 0.912	fscore = 0.904
+house: 	precision = 0.954	recall = 0.938	fscore = 0.946
+constellation: 	precision = 0.972	recall = 0.981	fscore = 0.977
+ent: 	precision = 0.930	recall = 0.944	fscore = 0.937
+stock: 	precision = 0.854	recall = 0.875	fscore = 0.865
+Average Precision: 0.932	Average Recall: 0.932	Average Fscore: 0.932
