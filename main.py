@@ -1,9 +1,9 @@
 from random_fasttext import *
 import time
 from sklearn.metrics import precision_recall_fscore_support
-import fasttext
-no_label = re.compile("(.+)__label__")
-label_pt = re.compile("__label__(.+)")
+import fastText
+no_label = re.compile("(.+)\t__label__")
+label_pt = re.compile("__label__.+")
 
 import numpy as np
 
@@ -23,30 +23,45 @@ def report(preds, true_labels, labels):
     print("Average Precision: {:.3f}\tAverage Recall: {:.3f}\tAverage Fscore: {:.3f}"\
           .format(np.mean(precisions), np.mean(recalls), np.mean(fscores)))
 
+def gen_word_vec_file(model,vec_file_name):
+    with open(vec_file_name, 'w',encoding='UTF-8') as f:
+        f.write("{} {}\n".format(len(model.get_words()), model.get_dimension()))
+        for word in model.get_words():
+            vec = model.get_word_vector(word)
+            f.write("{} {}\n".format(word, ' '.join(map(str, vec))))
+    return vec_file_name
+
 if __name__ == "__main__":
     s = time.time()
-    rft = RandomFastText(dim_ratio=0.2, n_classifier=30,dim=100,
-                         ws=5,lr=0.5,epoch=5)
-    rft.train("tokened/train_token.txt", "train_token.vec")
+    dim = 100
+    # cbow = fastText.train_unsupervised("tokened/train_token.txt",dim=100,model='skipgram',epoch=20)
+    # word_vec_file = gen_word_vec_file(cbow, "tmp.vec")
+    word_vec_file="tmp.vec"
+    cbow_t = time.time()
+    print("word embedding Time: {:.2f}s".format(cbow_t-s))
+
+
+    rft = RandomFastText(dim_ratio=0.2, n_classifier=200, dim=dim,
+                         ws=5,lr=2,epoch=1,min_count=5)
+    rft.train("tokened/train_token.txt", word_vec_file)
     train_t = time.time()
-    print("Trainning Time: {:.2f}s".format(train_t-s))
+    print("Trainning Time: {:.2f}s".format(train_t-cbow_t))
 
-    single = fasttext.supervised("tokened/train_token.txt", "single",ws=5, lr=0.5,
-                                    epoch=5,)
+    single = fastText.train_supervised("tokened/train_token.txt", ws=5,
+                                    epoch=5, dim=dim)
 
-    with open("tokened/test_token.txt", 'r') as f:
+    with open("tokened/test_token.txt", 'r',encoding='UTF-8') as f:
         lines = f.readlines()
         preds = rft.predict([no_label.findall(line)[0] for line in lines])
         pred_t = time.time()
         print("Prediction Time: {:.2f}s".format(pred_t - train_t))
         true_labels = [label_pt.findall(line)[0] for line in lines]
-        preds_sin = [pred[0] for pred in
-                     single.predict([no_label.findall(line)[0] for line in lines])]
+        preds_sin, _ = single.predict([no_label.findall(line)[0] for line in lines])
     labels = set(true_labels)
 
     print("RandomFastText Report:")
     report(preds, true_labels, labels)
-    print("\n\n\n")
+    print("\n\n")
     print("SingleFastText Report:")
     report(preds_sin, true_labels, labels)
 
